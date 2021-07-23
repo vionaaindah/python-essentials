@@ -1,4 +1,4 @@
-word = input("Sample input: ")
+word = input("Enter the plant: ")
 
 if word == "Spathiphyllum":
     print("Yes - Spathiphyllum is the best plant ever!")
