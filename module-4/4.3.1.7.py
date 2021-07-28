@@ -6,6 +6,8 @@ def is_year_leap(year):
 
 def days_in_month(year, month):
 # Write your new code here.
+  if month < 1 or month > 12:
+    return None
   leap_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
   if is_year_leap(year) == True and month == 2:
     return 29
