@@ -45,17 +45,15 @@ def make_list_of_free_fields(board):
 def victory_for(board, sign):
     # The function analyzes the board status in order to check if 
     # the player using 'O's or 'X's has won the game
-    win_rule = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
-                [1, 4, 7], [2, 5, 8], [3, 6, 9],
-                [1, 5, 9], [3, 5, 7]]
-    for i in range(len(win_rule)):
-        fields_1, fields_2, fields_3 = win_rule[i][0] - 1, \
-                                      win_rule[i][1] - 1, \
-                                      win_rule[i][2] - 1
-        if (str(board[fields_1]) == sign) and \
-           (str(board[fields_2]) == sign) and \
-           (str(board[fields_3]) == sign):
-            return True
+    if (board[0] == board[1] == board[2] == sign) or \
+       (board[3] == board[4] == board[5] == sign) or \
+       (board[6] == board[7] == board[8] == sign) or \
+       (board[0] == board[3] == board[6] == sign) or \
+       (board[1] == board[4] == board[7] == sign) or \
+       (board[2] == board[5] == board[8] == sign) or \
+       (board[0] == board[4] == board[9] == sign) or \
+       (board[2] == board[4] == board[6] == sign):
+        return True
     return False
 
 def draw_move(board):
