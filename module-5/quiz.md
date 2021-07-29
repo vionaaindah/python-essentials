@@ -1,5 +1,4 @@
-## Module 1 Python Essentials 2 Test
-
+## Module 1 Python Essentials 2 Quiz
 1. A namespace is:
 > a space in which name exist
 
