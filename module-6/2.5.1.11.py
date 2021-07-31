@@ -9,17 +9,17 @@ def sudoku_valid(board):
      if len_board < 1:
         return False
      for row in range(0, len_board):
-        row_fields = []
-        col_fields = []
+        horizontal = []
+        vertical = []
 
         for col in range(0, len_board):
-            if int(board[col][row]) in col_fields:
+            if int(board[col][row]) in vertical:
                 return False
-            col_fields.append(int(board[col][row]))
+            vertical.append(int(board[col][row]))
 
-            if int(board[row][col]) in row_fields:
+            if int(board[row][col]) in horizontal:
                 return False
-            row_fields.append(int(board[row][col]))
+            horizontal.append(int(board[row][col]))
 
             if int(board[row][col]) <= 0:
                 return False
