@@ -33,11 +33,11 @@ class Triangle:
 
     def perimeter(self):
         # Write code here
-        self.__first_leg = self.__first_point.distance_from_point(self.__second_point)
-        self.__second_leg = self.__first_point.distance_from_point(self.__third_point)
-        self.__third_leg = self.__second_point.distance_from_point(self.__third_point)
-        self.__leg = self.__first_leg + self.__second_leg + self.__third_leg
-        return self.__leg
+        self.__first_side = self.__first_point.distance_from_point(self.__second_point)
+        self.__second_side = self.__first_point.distance_from_point(self.__third_point)
+        self.__third_side = self.__second_point.distance_from_point(self.__third_point)
+        self.__perimeter = self.__first_side + self.__second_side + self.__third_side
+        return self.__perimeter
 
 
 triangle = Triangle(Point(0, 0), Point(1, 0), Point(0, 1))
