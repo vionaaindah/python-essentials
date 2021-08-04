@@ -1,4 +1,4 @@
-## Part Summary Test
+## Part 1 Summary Test
 
 1. Assuming that `my_tuple` is a correctly created tuple, the fact that tuples are immutable means that the following instruction:
 ```python
