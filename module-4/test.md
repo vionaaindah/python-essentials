@@ -35,7 +35,7 @@ print(x)
 
 6. What is the output of the following snippet?
 ```python
-def fun(x)
+def fun(x):
   if x % 2 == 0:
     return 1
   else:
