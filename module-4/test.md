@@ -112,7 +112,7 @@ def my_list(my_list):
   del my_list[3]
   my_list[3] = 'ram'
   
-print(mylist(mylist))
+print(my_list(mylist))
 ```
 > no output, the snippet is erroneous
 
